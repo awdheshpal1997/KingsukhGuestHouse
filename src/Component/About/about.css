@@ -1,0 +1,77 @@
+.about-container {
+    overflow: hidden;
+    display: grid;
+    gap: 2rem;
+}
+
+@media (width > 768px) {
+    .about-container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+
+.about-image img {
+    max-width: 450px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.about-heading {
+    margin-bottom: 0;
+}
+
+img {
+    width: 100%;
+    display: flex;
+}
+
+
+.about-subheader {
+    position: relative;
+    margin-bottom: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #0c0a09;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-subheader::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translate(1rem, -50%);
+    height: 2px;
+    width: 4rem;
+    background-color: #e82574;
+}
+
+.about-contact {
+    color: #0000EE;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.about-address {
+    color: #551A8B;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.about-header {
+    max-width: 600px;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-top: -2rem;
+    color: #0c0a09;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-description {
+    max-width: 600px;
+    margin-bottom: 1rem;
+    color: #78716c;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}

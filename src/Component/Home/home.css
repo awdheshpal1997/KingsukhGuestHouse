@@ -1,0 +1,227 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.body-header {
+    margin: 0px;
+    font-size: 16px;
+    background-image: url(../../asset/ayodhya.webp);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+nav {
+    position: fixed;
+    isolation: isolate;
+    top: 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    z-index: 9;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (width > 768px) {
+    .nav-links a:hover::after {
+        width: 100%;
+    }
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #e82574;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #bc1c5c;
+    color: #ffffff
+}
+
+@media (width > 768px) {
+    .nav-links a::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 0;
+        background-color: #e82574;
+        transition: 0.3s;
+        transform-origin: left;
+    }
+}
+
+@media (width > 768px) {
+    nav {
+        padding: 2rem 1rem;
+        position: static;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
+.nav-bar {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: #e82574;
+}
+
+@media (width > 768px) {
+    .nav-bar {
+        padding: 0;
+        background-color: #00000000;
+    }
+}
+
+@media (width > 768px) {
+    .nav__menu__btn {
+        display: none;
+    }
+}
+
+.nav__menu__btn {
+    font-size: 1.5rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.logo {
+    max-width: 120px;
+    font-weight: 500;
+}
+
+span {
+    color: aliceblue;
+}
+
+.nav-links {
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: rgba(188, 28, 92, 0.9);
+    transform: translateY(-100%);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+
+.nav-links.open {
+    transform: translateY(0);
+}
+
+@media (width > 768px) {
+    .nav__menu__btn {
+        display: none;
+    }
+}
+
+.nav__menu__btn {
+    font-size: 1.5rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+@media (width > 768px) {
+    .nav-links {
+        padding: 0;
+        width: unset;
+        position: static;
+        transform: none;
+        flex-direction: row;
+        background-color: #00000000;
+    }
+}
+
+.nav-links a {
+    position: relative;
+    isolation: isolate;
+    padding-bottom: 8px;
+    color: #ffffff;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+}
+
+.ri-menu-line:before {
+    content: "\ef3e";
+}
+
+.ri-menu-line {
+    font-family: 'remixicon' !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+@media (width > 768px) {
+    .nav-links a::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 0;
+        background-color: #e82574;
+        transition: 0.3s;
+        transform-origin: left;
+    }
+}
+
+@media (width < 768px) {
+    .btn-header {
+        display: none;
+    }
+}
+
+.header__container {
+    padding-block: 10rem 15rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header__container p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-align: center;
+    opacity: 0.6;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header__container h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 4.5rem;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header__container h1 span {
+    color: #e82574;
+    font-family: 'Poppins', sans-serif;
+}

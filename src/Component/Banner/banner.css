@@ -1,0 +1,35 @@
+.section__container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.banner__container {
+    padding: 5rem 1rem;
+}
+
+.banner__content {
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.banner__card {
+    text-align: center;
+    flex: 1 1 180px;
+}
+
+.banner__card h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #0c0a09;
+}
+
+.banner__card p {
+    color: #78716c;
+}
